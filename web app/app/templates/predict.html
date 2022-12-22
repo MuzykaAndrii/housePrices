@@ -1,0 +1,142 @@
+<h1>Fill the data about home to predict price</h1>
+    <form method="post" id="titanic_form">
+        <label for="MSZoning">MSZoning</label><br>
+        <select id="MSZoning" name="MSZoning"false>
+            <option value="A" title="Agriculture">Agriculture</option>
+            <option value="C" title="Commercial">Commercial</option>
+            <option value="FV" title="Floating Village Residential">Floating Village Residential</option>
+            <option value="I" title="Industrial">Industrial</option>
+            <option value="RH" title="Residential High Density">Residential High Density</option>
+            <option value="RL" title="Residential Low Density">Residential Low Density</option>
+            <option value="RP" title="Residential Low Density Park">Residential Low Density Park</option>
+            <option value="RM" title="Residential Medium Density">Residential Medium Density</option>
+        </select>
+
+        <br><label for="Alley">Alley</label><br>
+        <select id="Alley" name="Alley"false>
+            <option value="Grvl" title="Gravel">Gravel</option>
+            <option value="PAve" title="Paved">Paved</option>
+            <option value="NA" title="No alley access">No alley access</option>
+        </select>
+
+        <br><label for="LotShape">LotShape</label><br>
+        <select id="LotShape" name="LotShape"false>
+            <option value="Reg" title="Regular">Regular</option>
+            <option value="IR1" title="Slightly irregular">Slightly irregular</option>
+            <option value="IR2" title="Moderately Irregular">Moderately Irregular</option>
+            <option value="IR3" title="Irregular">Irregular</option>
+        </select>
+
+        <br><label for="Condition1">Condition1</label><br>
+        <select id="Condition1" name="Condition1"true>
+            <option value="Artery">Adjacent to arterial street</option>
+            <option value="Feedr">Adjacent to feeder street</option>
+            <option value="Norm">Normal</option>
+            <option value="RRNn">Within 200' of North-South Railroad</option>
+            <option value="RRAn">Adjacent to North-South Railroad</option>
+            <option value="PosN">Near positive off-site feature--park, greenbelt, etc.</option>
+            <option value="PosA">Adjacent to postive off-site feature</option>
+            <option value="RRNe">Within 200' of East-West Railroad</option>
+            <option value="RRAe">Adjacent to East-West Railroad</option>
+        </select>
+
+        <br><label for="BldgType">BldgType</label><br>
+        <select id="BldgType" name="BldgType"true>
+            <option value="1Fam">Single-family Detached</option>
+            <option value="2FmCon">Two-family Conversion; originally built as one-family dwelling</option>
+            <option value="Duplx">Duplex</option>
+            <option value="TwnhsE">Townhouse End Unit</option>
+            <option value="TwnhsI">Townhouse Inside Unit</option>
+        </select>
+
+        <br><label for="RoofStyle">RoofStyle</label><br>
+        <select id="RoofStyle" name="RoofStyle"true>
+            <option value="Flat">Flat</option>
+            <option value="Gabrel">Gabrel (Barn)</option>
+            <option value="Hip">Hip</option>
+            <option value="Mansard">Mansard</option>
+            <option value="Shed">Shed</option>
+        </select>
+
+        <br><label for="RoofMatl">RoofMatl</label><br>
+        <select id="RoofMatl" name="RoofMatl"true>
+            <option value="Flat">Clay or Tile</option>
+            <option value="Gabrel">Standard (Composite) Shingle</option>
+            <option value="Membran">Membrane</option>
+            <option value="Metal">Metal</option>
+            <option value="Roll">Roll</option>
+            <option value="Tar&Grv">Gravel & Tar</option>
+            <option value="WdShake">Wood Shakes</option>
+            <option value="WdShngl">Wood Shingles</option>
+        </select>
+
+        <br><label for="ExterCond">ExterCond</label><br>
+        <select id="ExterCond" name="ExterCond"true>
+            <option value="Ex">Excellent</option>
+            <option value="Gd">Good</option>
+            <option value="TA">Average/Typical</option>
+            <option value="Fa">Fair</option>
+            <option value="Po">Poor</option>
+        </select>
+
+        <br><label for="Heating">Heating</label><br>
+        <select id="Heating" name="Heating"true>
+            <option value="Floor">Floor Furnace</option>
+            <option value="GasA">Gas forced warm air furnace</option>
+            <option value="GasW">Gas hot water or steam heat</option>
+            <option value="Grav">Gravity furnace</option>
+            <option value="OthW">Hot water or steam heat other than gas</option>
+            <option value="Wall">Wall furnace</option>
+        </select>
+
+        <br><label for="Electrical">Electrical</label><br>
+        <select id="Electrical" name="Electrical"true>
+            <option value="SBrkr">Standard Circuit Breakers & Romex</option>
+            <option value="FuseA">Fuse Box over 60 AMP and all Romex wiring (Average)</option>
+            <option value="FuseF">60 AMP Fuse Box and mostly Romex wiring (Fair)</option>
+            <option value="FuseP">60 AMP Fuse Box and mostly knob & tube wiring (poor)</option>
+            <option value="Mix">Mixed</option>
+        </select>
+
+        <br><label for="MSSubClass">MSSubClass</label><br>
+        <select id="MSSubClass" name="MSSubClass"true>
+            <option value="20">1-STORY 1946 & NEWER ALL STYLES</option>
+            <option value="30">1-STORY 1945 & OLDER</option>
+            <option value="40">1-STORY W/FINISHED ATTIC ALL AGES</option>
+            <option value="45">1-1/2 STORY - UNFINISHED ALL AGES</option>
+            <option value="50">1-1/2 STORY FINISHED ALL AGES</option>
+            <option value="60">2-STORY 1946 & NEWER</option>
+            <option value="70">2-STORY 1945 & OLDER</option>
+            <option value="75">2-1/2 STORY ALL AGES</option>
+            <option value="80">SPLIT OR MULTI-LEVEL</option>
+            <option value="85">SPLIT FOYER</option>
+            <option value="90">DUPLEX - ALL STYLES AND AGES</option>
+            <option value="120">1-STORY PUD (Planned Unit Development) - 1946 & NEWER</option>
+            <option value="150">1-1/2 STORY PUD - ALL AGES</option>
+            <option value="160">2-STORY PUD - 1946 & NEWER</option>
+            <option value="180">PUD - MULTILEVEL - INCL SPLIT LEV/FOYER</option>
+            <option value="190">2 FAMILY CONVERSION - ALL STYLES AND AGES</option>
+        </select>
+
+        <br><label for="OverallCond">OverallCond</label><br>
+        <select id="OverallCond" name="OverallCond"true>
+            <option value="10">Very Excellent</option>
+            <option value="9">Excellent</option>
+            <option value="8">Very Good</option>
+            <option value="7">Good</option>
+            <option value="6">Above Average</option>
+            <option value="5">Average</option>
+            <option value="4">Below Average</option>
+            <option value="3">Fair</option>
+            <option value="2">Poor</option>
+            <option value="1">Very Poor</option>
+        </select>
+        
+        <br><label for="YearBuilt">YearBuilt</label><br>
+        <input type="number" name="YearBuilt" id="YearBuilt"  class="form-control" placeholder="Year Builded">
+        
+        <br><label for="LotArea">LotArea</label><br>
+        <input type="number" name="LotArea" id="LotArea"  class="form-control" placeholder="Lot Area">
+
+        <input type="submit" class="btn btn-success" value="Submit">
+    </form>
